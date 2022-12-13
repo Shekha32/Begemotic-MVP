@@ -1,0 +1,10 @@
+version: '3'
+services:
+  fastapi:
+    build:
+      context: ./
+      dockerfile: fastapi.dockerfile
+    volumes:
+      - './fastapi:/app'
+    ports:
+      - "8000:8000"
